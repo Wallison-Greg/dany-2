@@ -1,0 +1,190 @@
+@import url('/assets/style/home.css');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+main{
+    height: 100%;
+    background-color: rgb(245, 239, 227);
+}
+
+.fundo header {
+    box-shadow: 0px 0.5px 4px rgb(0 0 0 / 50%);
+    position: relative;
+}
+.body {
+    display: flex;
+    justify-content: center;
+}
+.body .container{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+
+    background-color: rgb(240, 233, 233);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.705);
+}
+.body .widget-title-text{
+    font-size: 16px;
+}
+.hort .widget-title-bar{
+    background-color: #24b65f;
+}
+.merc .widget-title-bar{
+    background-color: #835b17;
+}
+.açou .widget-title-bar{
+    background-color: #AB0000;
+}
+.beb .widget-title-bar{
+    background-color: #3156a3;
+}
+.pan .widget-title-bar{
+    background-color: #FFCC29;
+}
+.container .area_products{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.area_products .product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    min-width: 220px;
+    height: auto;
+    margin: 10px;
+
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.61);
+    background-color: rgba(0, 0, 0, 0.171);
+    border-radius: 15px;
+
+}
+
+.pric_prod {
+    font-size: 18px;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.555);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0px;
+    color: #ecbd21;
+}
+
+.product .desc_prod{
+    display: flex;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1.5px 1.5px 2px rgba(0, 0, 0, 0.678);
+    max-width: 180px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.product .img_prod img{
+    margin-top: 10px;
+    width: 170px;
+    height: 125px;
+}
+.area_products .product:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.product:hover .desc_prod{
+    display: flex;
+}
+.desc_prod .cont_prod{
+    text-align: center;
+}
+
+.att_title{
+    font-family: 'Great Vibes', cursive;
+    color: #FFCC29;
+    font-weight: 400;
+    font-size: 50px;
+    padding: 50px 0px;
+    margin: auto;
+}
+.att_icon{
+    margin: auto;
+    padding-bottom: 20px;
+}
+.atributo .container{
+    min-width: 50vw;
+}
+.att_cont{
+    background-color: #dadada;
+    border-radius: 10px;
+}
+.container .att_cont{
+    min-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.att_cont .att_cont_desc{
+    max-width: 500px;
+    margin: auto;
+    padding: 20px 0px;
+    text-align: justify;
+}
+.att_cont_desc ul{
+    list-style-position: inside;
+}
+
+/*reponsividade tablet*/
+
+@media (max-width: 768px){
+
+    .container .area_products{
+        flex-wrap: wrap;
+    }
+    .area_products .product{
+        max-width: 180px;
+        min-width: 180px;
+        margin: 15px 50px;
+    }
+    .product .img_prod img{
+        width: 150px;
+        height: 115px;
+    }
+    .product .desc_prod{
+        max-width: 150px;
+    }
+    .container .att_cont{
+        min-width: 400px;
+        margin: 0px 10px 20px 10px;
+    }
+    .att_cont .att_cont_desc{
+        max-width: 380px;
+        font-size: 14px;
+    }
+
+}
+
+/*responsividade mobile*/
+
+@media (max-width: 589px){
+
+    .container .area_products{
+        flex-wrap: wrap;
+    }
+    .product .desc_prod{
+        max-width: 110px;
+    }
+    .area_products .product{
+        max-width: 200px;
+        min-width: 150px;
+        margin: 10px;
+    }
+    .product .img_prod img{
+        width: 125px;
+        height: 100px;
+    }
+
+    .container .att_cont {
+        min-width: 340px;
+        padding: 0px 10px;
+    }
+}
